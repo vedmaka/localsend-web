@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    baseUrl: "https://web.localsend.org",
+    baseUrl: "https://localsend.d.mediawiki.pro",
     strategy: "prefix_except_default",
     defaultLocale: "en",
     locales: [

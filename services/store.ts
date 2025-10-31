@@ -81,7 +81,8 @@ async function connectionLoop() {
   while (true) {
     try {
       store.signaling = await SignalingConnection.connect({
-        url: "wss://public.localsend.org/v1/ws",
+        //url: "wss://public.localsend.org/v1/ws",
+        url: "wss://signal-localsend.d.mediawiki.pro/v1/ws",
         info: store._proposingClient!,
         onMessage: (data: WsServerMessage) => {
           switch (data.type) {
