@@ -14,8 +14,6 @@ COPY <<"EOT" /etc/caddy/Caddyfile
 http:// {
     file_server
     root * /usr/share/caddy
-    tls internal {
-	    on_demand
-    }
+    tls off
 }
 EOT
